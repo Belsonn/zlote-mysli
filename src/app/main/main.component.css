@@ -23,7 +23,7 @@
   );
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 0.1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  text-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
   color: transparent;
   transition: all 0.3s ease-in;
 }
@@ -48,5 +48,31 @@
   font-size: 2rem;
   position: relative;
   background-color: #EA7F7F;
+  transition: all 0.2s ease-in;
 }
 
+.btn:hover{
+  transform: translateY(-0.6rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.section-thoughts{
+  margin-top: 10rem;
+}
+
+.thought {
+  font-size: 1.8rem;
+  padding: 3rem;
+  border-bottom: 1px #D1AAAA solid;
+}
+
+.thought-date{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: block;
+  color: #686767;
+}

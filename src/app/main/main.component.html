@@ -3,7 +3,13 @@
     <h2 class="heading-primary">Twoje myśli</h2>
   </div>
   <div class="input-group input-group-lg">
-      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-      <button type="button" class="btn">Dodaj</button>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="thought" (keydown) = "checkEnter($event)">
+      <button type="button" class="btn" (click) ="onThoughtCreate()" >Dodaj</button>
   </div>
+  <div class="section-thoughts">
+      <p class ="thought" *ngFor="let thought of thoughts; let i = index">{{i+1}}. {{thought}} <span class="thought-date">{{dates[i]}}</span></p>
+
+    
+
+</div>
 </div>
