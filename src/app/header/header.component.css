@@ -1,15 +1,15 @@
 .header {
   height: 40vh;
   background-image: linear-gradient(
-    to right bottom,
-    rgba(220, 96, 96, 0.8),
-    rgba(207, 21, 21, 0.8)
-  );
+    to right,
+    rgba(234, 127, 127 , 0.6),
+    rgba(231, 78, 78 , 0.6)),
+    url("./img/img-1.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
- -webkit-clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%); 
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
 }
 .header__text-box {
   position: absolute;
@@ -28,7 +28,7 @@
 
 .heading-primary--main {
   display: block;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 200;
   letter-spacing: 1rem;
   animation-name: moveInRight;
@@ -38,29 +38,36 @@
 .heading-primary--sub {
   display: block;
   margin-top: 2rem;
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 0.3rem;
   animation: moveInLeft 2.4s ease-out;
 }
 
 @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-12rem); }
-    80% {
-      transform: translateX(2rem); }
-    100% {
-      opacity: 1;
-      transform: translate(0); } }
-  
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem); }
-    80% {
-      transform: translateX(-1rem); }
-    100% {
-      opacity: 1;
-      transform: translate(0); } }
-  
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
