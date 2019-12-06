@@ -50,5 +50,6 @@ export class MainComponent implements OnInit {
   }
   deleteItem(index) {
     this.thoughts.splice(index, 1);
+    this.dates.splice(index,1);
   }
 }
