@@ -34,10 +34,18 @@
 }
 .input-group {
   display: inline-block;
-  text-align: center;
+  margin: auto;
+  width: 60%;
 }
 
-.btn {
+.border-red {
+  border-color: #EA7F7F;
+}
+.border-red:focus{
+  box-shadow: 0 0 1rem #EA7F7F;   
+}
+
+.btn-main {
   margin-top: 4rem;
   color: #fff;
   text-transform: uppercase;
@@ -47,32 +55,54 @@
   padding: 1rem 4rem;
   font-size: 2rem;
   position: relative;
-  background-color: #EA7F7F;
+  background-color: #ea7f7f;
   transition: all 0.2s ease-in;
 }
 
-.btn:hover{
+.btn-main:hover {
   transform: translateY(-0.6rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.btn:active{
+.btn-main:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.section-thoughts{
+.section-thoughts {
   margin-top: 10rem;
 }
 
 .thought {
   font-size: 1.8rem;
-  padding: 3rem;
-  border-bottom: 1px #D1AAAA solid;
+  color: #EA7F7F;
 }
 
-.thought-date{
+.onethought:hover .btn-delete{
+  display: inline-block;
+}
+
+.onethought {
+  border-bottom: 1px #d1aaaa solid;
+}
+
+.thought-date {
   margin-top: 1rem;
   font-size: 1.2rem;
   display: block;
   color: #686767;
+}
+
+.btn-delete {
+  display: none;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 50%;
+  color: #FFF;
+  background-color: #EA7F7F;
+  transition: all 0.2s ease-in;
+}
+
+.btn-delete:hover{
+  transform: translateY(-0.6rem);
+  box-shadow: 0 0 2rem #EA7F7F;
 }
